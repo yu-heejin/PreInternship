@@ -1,1 +1,1 @@
-# Team E - BF
+# Team E
