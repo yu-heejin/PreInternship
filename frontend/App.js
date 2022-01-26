@@ -1,11 +1,9 @@
-
 import React from 'react';
-import {View, ImageBackground, StyleSheet} from 'react-native';
+import {Text, View, ImageBackground, StyleSheet, TouchableOpacity,} from 'react-native';
 import {Dimensions} from 'react-native';
-import CustomButton from './CustomButton';
-// 외부에서 패키지를 가져옴
+import { Fonts } from './Fonts';
 
-const App = () => {     //실행함수 const 함수이름 
+const App = () => {
   var {height, width} = Dimensions.get('window');
  
   return (
@@ -14,14 +12,21 @@ const App = () => {     //실행함수 const 함수이름
         source={require('./backmain.png')} 
         style={{width:width,height: '100%'}}
         >
-        <CustomButton></CustomButton>
+        <TouchableOpacity style={styles.button} onPress={()=>alert('Welcome to ghibli')}>
+          <Text style={{
+            color: 'white',
+            fontFamily: Fonts.GmarketSansTTFMedium,
+            fontSize: 25,
+            marginTop: 330,
+            marginLeft: 175,
+          }}>Start</Text>
+        </TouchableOpacity>
       </ImageBackground>
       
   </View>
   )
 }
 
-//CSS부분
 const styles = StyleSheet.create({
   container: {
     flex : 1,
@@ -30,4 +35,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default App;    //메인 액티비티로 내보냄
+export default App;
