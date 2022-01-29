@@ -8,6 +8,13 @@ CMD [ "apt-get" , "install" ,"-y" , "openjdk-8-jdk" , "6" , "69" ]
 RUN apt-get -y install git && \
     curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
     apt install -y nodejs && \
-    npm install -y -g expo-cli
+    npx start && \
+    npm install -g react-native-cli && \
+    apt-get upgrade -y python3 && \
+    apt-get install -y python3-setuptools && \
+    apt-get install -y python3-pip && \
+    npm cache clean --force && \
+    rm -rf node_modules package-lock.json && \
+    npm install
 
 COPY ./ ./
