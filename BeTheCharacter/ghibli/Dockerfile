@@ -9,3 +9,5 @@ RUN apt-get -y install git && \
     curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
     apt install -y nodejs && \
     npm install -y -g expo-cli
+
+COPY ./ ./

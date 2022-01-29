@@ -1,0 +1,34 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'run', 'android' ]
+2 info using npm@6.14.12
+3 info using node@v10.24.1
+4 verbose run-script [ 'preandroid', 'android', 'postandroid' ]
+5 info lifecycle ghibli@0.0.1~preandroid: ghibli@0.0.1
+6 info lifecycle ghibli@0.0.1~android: ghibli@0.0.1
+7 verbose lifecycle ghibli@0.0.1~android: unsafe-perm in lifecycle true
+8 verbose lifecycle ghibli@0.0.1~android: PATH: /usr/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/BeTheCharacter/ghibli/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+9 verbose lifecycle ghibli@0.0.1~android: CWD: /BeTheCharacter/ghibli
+10 silly lifecycle ghibli@0.0.1~android: Args: [ '-c', 'react-native run-android' ]
+11 info lifecycle ghibli@0.0.1~android: Failed to exec android script
+12 verbose stack Error: ghibli@0.0.1 android: `react-native run-android`
+12 verbose stack spawn ENOENT
+12 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:48:18)
+12 verbose stack     at ChildProcess.emit (events.js:198:13)
+12 verbose stack     at maybeClose (internal/child_process.js:982:16)
+12 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:259:5)
+13 verbose pkgid ghibli@0.0.1
+14 verbose cwd /BeTheCharacter/ghibli
+15 verbose Linux 5.10.16.3-microsoft-standard-WSL2
+16 verbose argv "/usr/bin/node" "/usr/bin/npm" "run" "android"
+17 verbose node v10.24.1
+18 verbose npm  v6.14.12
+
+19 error code ELIFECYCLE
+20 error syscall spawn
+21 error file sh
+22 error errno ENOENT
+23 error ghibli@0.0.1 android: `react-native run-android`
+23 error spawn ENOENT
+24 error Failed at the ghibli@0.0.1 android script.
+24 error This is probably not a problem with npm. There is likely additional logging output above.
+25 verbose exit [ 1, true ]
