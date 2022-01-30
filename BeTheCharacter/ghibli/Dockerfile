@@ -7,7 +7,7 @@ RUN apt-get -y update && \
 #jdk install
 CMD [ "apt-get" , "install" ,"-y" , "openjdk-8-jdk" , "6" , "69" ]
 
-#node js ,reactnative-cli , python , pip ,npx install , npm reinstall
+#node js ,reactnative-cli , python , pip , npm reinstall
 RUN apt-get -y install git && \
     curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
     apt install -y nodejs && \
@@ -15,10 +15,7 @@ RUN apt-get -y install git && \
     apt-get upgrade -y python3 && \
     apt-get install -y python3-setuptools && \
     apt-get install -y python3-pip && \
-    npm cache clean --force && \
-    rm -rf node_modules && \
-    rm -rf package-lock.json && \
-    npm install
+    npm install --global yarn
 
 WORKDIR ./BeTheCharacter/ghibli
 COPY . ./

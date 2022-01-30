@@ -1,0 +1,34 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'run', 'android' ]
+2 info using npm@6.14.12
+3 info using node@v10.24.1
+4 verbose run-script [ 'preandroid', 'android', 'postandroid' ]
+5 info lifecycle ghibli@0.0.1~preandroid: ghibli@0.0.1
+6 info lifecycle ghibli@0.0.1~android: ghibli@0.0.1
+7 verbose lifecycle ghibli@0.0.1~android: unsafe-perm in lifecycle true
+8 verbose lifecycle ghibli@0.0.1~android: PATH: /usr/lib/node_modules/npm/node_modules/npm-lifecycle/node-gyp-bin:/BeTheCharacter/ghibli/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+9 verbose lifecycle ghibli@0.0.1~android: CWD: /BeTheCharacter/ghibli
+10 silly lifecycle ghibli@0.0.1~android: Args: [ '-c', 'react-native run-android' ]
+11 silly lifecycle ghibli@0.0.1~android: Returned: code: 1  signal: null
+12 info lifecycle ghibli@0.0.1~android: Failed to exec android script
+13 verbose stack Error: ghibli@0.0.1 android: `react-native run-android`
+13 verbose stack Exit status 1
+13 verbose stack     at EventEmitter.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-lifecycle/index.js:332:16)
+13 verbose stack     at EventEmitter.emit (events.js:198:13)
+13 verbose stack     at ChildProcess.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-lifecycle/lib/spawn.js:55:14)
+13 verbose stack     at ChildProcess.emit (events.js:198:13)
+13 verbose stack     at maybeClose (internal/child_process.js:982:16)
+13 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:259:5)
+14 verbose pkgid ghibli@0.0.1
+15 verbose cwd /BeTheCharacter/ghibli
+16 verbose Linux 5.10.16.3-microsoft-standard-WSL2
+17 verbose argv "/usr/bin/node" "/usr/bin/npm" "run" "android"
+18 verbose node v10.24.1
+19 verbose npm  v6.14.12
+20 error code ELIFECYCLE
+21 error errno 1
+22 error ghibli@0.0.1 android: `react-native run-android`
+22 error Exit status 1
+23 error Failed at the ghibli@0.0.1 android script.
+23 error This is probably not a problem with npm. There is likely additional logging output above.
+24 verbose exit [ 1, true ]
