@@ -7,7 +7,7 @@ RUN apt-get -y update && \
 #jdk install
 CMD [ "apt-get" , "install" ,"-y" , "openjdk-8-jdk" , "6" , "69" ]
 
-#node js ,reactnative-cli , python , pip , npm reinstall
+#node js ,reactnative-cli , python , pip , yarn install
 RUN apt-get -y install git && \
     curl -sL https://deb.nodesource.com/setup_10.x | bash - && \
     apt install -y nodejs && \
