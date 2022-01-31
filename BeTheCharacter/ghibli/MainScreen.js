@@ -1,18 +1,17 @@
 import React, {Component} from 'react';
-import {Text, View, ImageBackground, StyleSheet, TouchableOpacity,} from 'react-native';
+import {Text, View, ImageBackground, StyleSheet, TouchableOpacity, useColorScheme,} from 'react-native';
 import {Dimensions} from 'react-native';
 
 var {height, width} = Dimensions.get('window');
 
-export default class MainScreen extends Component { 
-    render() { 
+const MainScreen = ({ navigation }) => {
         return ( 
             <View style={{flex:1,backgroundColor: '#246dd5', alignItems: 'center'}}>
             <ImageBackground 
-              source={require('./backmain.png')} 
+              source={(useColorScheme() == 'light') ? require('./backmain.png') : require('./backmaind.png')} 
               style={{width:width,height: '100%'}}
               >
-              <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.push('DETAIL')}>
+              <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('DETAIL')}>
                 <Text style={{
                   color: 'white',
                   fontFamily: 'GmarketSansTTFMedium',
@@ -24,9 +23,6 @@ export default class MainScreen extends Component {
             </ImageBackground>
         </View> 
         ); 
-    } goMainScreen(){ 
-        this.props.navigation.navigate('DETAIL'); 
-    } 
 }
 const styles = StyleSheet.create({
     container: {
@@ -35,4 +31,5 @@ const styles = StyleSheet.create({
       alignItems: 'center',
     },
   });
-  
+
+  export default MainScreen;

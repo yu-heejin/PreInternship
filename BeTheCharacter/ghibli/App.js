@@ -9,8 +9,8 @@ function App() {
   return ( 
   <NavigationContainer>
     <Stack.Navigator initialRouteName="MAIN">
-      <Stack.Screen name="MAIN" component={MainScreen} options={{ title: 'MainScreen' }}/>
-      <Stack.Screen name="DETAIL" component={DetailScreen} options={{ title: 'CameraScreen' }}/>
+      <Stack.Screen name="MAIN" component={MainScreen} options={{ headerShown: false,}}/>
+      <Stack.Screen name="DETAIL" component={DetailScreen} options={{headerShown: false,}}/>
     </Stack.Navigator> 
   </NavigationContainer> ); 
 } 

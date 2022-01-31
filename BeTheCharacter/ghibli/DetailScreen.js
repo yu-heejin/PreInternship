@@ -1,7 +1,8 @@
-import React, {Component} from 'react';
+import React from 'react';
 import {Button, Text, ImageBackground, TouchableOpacity, View} from 'react-native';
 import {RNCamera} from 'react-native-camera';
 import {Dimensions} from 'react-native';
+import { useColorScheme } from 'react-native';
 
 var {height, width} = Dimensions.get('window');
 
@@ -27,7 +28,7 @@ const ProductScanRNCamera = () => {
           backgroundColor: '#246dd5'
         }}
       ><ImageBackground 
-      source={require('./cam1.jpeg')} 
+      source={(useColorScheme() == 'light') ? require('./cam1.jpeg') : require('./cam2.jpeg')} 
       style={{width:width,height: '100%',
       flex: 1,
       justifyContent: 'center',
@@ -50,7 +51,7 @@ const ProductScanRNCamera = () => {
                 justifyContent:'center',
                 width:80,
                 height:80,
-                backgroundColor:'#ffd5dc',
+                backgroundColor:(useColorScheme() == 'light') ?'#ffd5dc' : '#cdd9ff',
                 borderRadius:100,
                 borderWidth: 10,
                 borderColor: '#fff'}}>
