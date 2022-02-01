@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:16.13.2
 
 #curl , python , pip install
 RUN apt-get -y update && \
