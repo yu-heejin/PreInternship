@@ -3,6 +3,7 @@ import {Button, Text, ImageBackground, TouchableOpacity, View} from 'react-nativ
 import {RNCamera} from 'react-native-camera';
 import {Dimensions} from 'react-native';
 import { useColorScheme } from 'react-native';
+import CameraRoll from "@react-native-community/cameraroll";
 
 var {height, width} = Dimensions.get('window');
 
@@ -16,7 +17,12 @@ const ProductScanRNCamera = () => {
           quality: 1,
           exif: true,
       });
-      console.log('찍었지롱');
+      console.log('data', data.uri);
+
+      if (data) {
+        const result = await CameraRoll.save(data.uri);
+        console.log('result', result);
+      }
     }
   }
     return (
