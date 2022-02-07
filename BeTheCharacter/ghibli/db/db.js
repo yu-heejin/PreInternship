@@ -48,8 +48,8 @@ db.post('/delete', (req, res) => {
 
 db.post('/update', (req, res) => {
     img.findByIdAndUpdate(req.body.id, {
-        change: req.body.change,
-        notChange: req.body.notChange
+        picture: req.body.picture,
+        result: req.body.result
     }).then(data => {
         console.log(data)
         res.send(data)
