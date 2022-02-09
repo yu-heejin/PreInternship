@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "403519734044",
+    "project_id": "ghibli-73a2b",
+    "storage_bucket": "ghibli-73a2b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:403519734044:android:9b5344ecdf1f4ffafc3ad9",
+        "android_client_info": {
+          "package_name": "com.cam3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "403519734044-dt9jhdjuljo850u3mfavnvjai6jb8jb3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cam3",
+            "certificate_hash": "6070e1175b0e4e22f2c44a37768efb67519cd9f9"
+          }
+        },
+        {
+          "client_id": "403519734044-lc442m0pbjm7f9bpqh6po0jietrcklss.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSV43rJJ5ztApxpv_Af6c6r38eaH3b8Po"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "403519734044-lc442m0pbjm7f9bpqh6po0jietrcklss.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
