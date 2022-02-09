@@ -10,6 +10,26 @@ var {height, width} = Dimensions.get('window');
 const ProductScanRNCamera = () => {
   const cameraRef = React.useRef(null);
 
+  const submitData = (UriData, save) => {
+    fetch("http://10.0.2.2:3000/send-data", {
+      method: "post",
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: JSON.stringify({
+        picture: UriData,
+        result: save
+      })
+    })
+    .then(res.json())
+    .then(data => {
+      console.log(data)
+    })
+    .catch(err => {
+      console.log(err)
+    })
+  }
+
   const takePicture = async () => {
     console.log('cameraRef', cameraRef);
     if (cameraRef) {
@@ -22,6 +42,7 @@ const ProductScanRNCamera = () => {
       if (data) {
         const result = await CameraRoll.save(data.uri);
         console.log('result', result);
+        submitData(data.uri, result);
       }
     }
   }
