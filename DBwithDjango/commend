@@ -1,0 +1,38 @@
+python -m venv myevn
+myevn\Scripts\activate
+pip install Django
+django-admin jangodb
+cd jangodb
+python manage.py runserver
+python manage.py startapp jdb
+django.core.exceptions.ImproperlyConfigured: 'djongo' isn't an available database backend.
+Try using 'django.db.backends.XXX', where XXX is one of:
+    'mysql', 'oracle', 'postgresql', 'sqlite3' error solution
+-> pip install django==2
+-> pip install django --upgrade django
+-> downgrade django && upgrade django (why do it work????????????)
+python manage.py createsuperuser
+user: timmy
+email: (enter - pass)
+password: tjdskacjdsus
+python manage.py makemigrations
+NotImplementedError: Database objects do not implement truth value testing or bool(). 
+Please compare with None instead: database 
+is not None error solution
+-> pip install pymongo==3.12.1
+ERROR: Could not install packages due to an OSError: [WinError 5] 액세스가 거부되었습 
+니다: error solution
+-> cmd administrator mode command
+-> cd project location
+-> myevn\Scripts\activate
+-> pip install pymongo==3.12.1
+-> This error occurs due to administrator authority.
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+superuser login after connecting ip/8000/admin
+reference:
+https://www.youtube.com/watch?v=alrLd9T96aA&list=PLi4xPOplIq7d1vDdLBAvS5PmQR-p6KwUz
+https://www.youtube.com/watch?v=9WctwW_Pe1o&list=PLi4xPOplIq7d1vDdLBAvS5PmQR-p6KwUz&index=2
+https://jacobsood.medium.com/integrating-mongodb-atlas-with-django-using-djongo-962dfd1513eb
+https://www.youtube.com/watch?v=FLZYLog369s
