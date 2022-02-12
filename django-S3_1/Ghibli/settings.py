@@ -60,9 +60,9 @@ AWS_S3_SECURE_URLS = False       # use http instead of https
 # 필요한지 확실하지 않음 ; 요청에 대한 복잡한 인증 관련 쿼리 매개 변수 허용 여부 = false
 AWS_QUERYSTRING_AUTH = False     # don't add complex authentication-related query parameters for requests
 
-# AWS_S3 정보
-AWS_S3_ACCESS_KEY_ID = 'AKIAUAMQWAYESYLBKBBP'
-AWS_S3_SECRET_ACCESS_KEY = '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'
+# AWS_S3 정보 : KEY 2개는 필요하시면 말씀해주세요! github에 올리니까 경고메일이 자꾸 와서 지웠습니다..
+AWS_S3_ACCESS_KEY_ID = 'AWS_S3_ACCESS_KEY_ID'
+AWS_S3_SECRET_ACCESS_KEY = 'AWS_S3_SECRET_ACCESS_KEY'
 AWS_REGION = 'ap-northeast-2'
 
 # S3 storages
