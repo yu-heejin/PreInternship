@@ -23,8 +23,9 @@ from django.conf import settings
 urlpatterns = [
     re_path(r'^', include('jdb.urls')),
     re_path('admin/', admin.site.urls),
-    path('api/', include('rest_framework.urls')), 
-    path('', include('s3api.urls')),  
+    # path('api/', include('rest_framework.urls')), 
+    path('apis3/', include('s3api.urls')), 
+    # re_path(r'^s3api/', view=include('s3api.urls')),
 ]
 
 if settings.DEBUG:
