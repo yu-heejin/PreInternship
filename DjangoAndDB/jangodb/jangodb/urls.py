@@ -24,8 +24,8 @@ urlpatterns = [
     re_path(r'^', include('jdb.urls')),
     re_path('admin/', admin.site.urls),
     # path('api/', include('rest_framework.urls')), 
-    path('apis3/', include('s3api.urls')), 
-    # re_path(r'^s3api/', view=include('s3api.urls')),
+    path('s3api/', include('s3api.urls')), 
+    # path('s3api2/', include('s3api2.urls')), 
 ]
 
 if settings.DEBUG:

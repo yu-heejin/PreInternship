@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     's3api',
+    # 's3api2',
     'storages',
 ]
 

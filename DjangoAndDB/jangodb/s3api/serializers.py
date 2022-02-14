@@ -6,10 +6,10 @@ from .models import *
 #         model = DropBox
 #         fields = '__all__'
 
-# class PhotoSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = test
-#         fields = '__all__'
+class PhotoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = test
+        fields = '__all__'
 
 # from rest_framework import serializers
 # from s3api.constants import ACCESS_CONTROL_TYPES, PRIVATE

@@ -7,10 +7,10 @@ from s3api import views
 # router.register('accounts', DropBoxViewset)
 # urlpatterns = router.urls
 
-# urlpatterns = [
-#     path('image/', Image.as_view(), name = 'image'),
-#     # path('image/<int:pk>/', Image.as_view()),
-# ]
+urlpatterns = [
+    path('image', views.Image.as_view(), name = 'image'),
+    # path('image/<int:pk>/', Image.as_view()),
+]
 
 # from django.urls import path, include, re_path
 # from s3api import views

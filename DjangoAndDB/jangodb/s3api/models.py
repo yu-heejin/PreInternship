@@ -13,11 +13,11 @@ from django.db import models
 #     def __str__(self):
 #         return self.title
 
-# class test(models.Model):
-#     testfield = models.CharField(max_length= 100)
-#     photo = models.FileField()
-#     def __str__(self):
-#         return self.testfield
+class test(models.Model):
+    testfield = models.CharField(max_length= 100)
+    photo = models.FileField()
+    def __str__(self):
+        return self.testfield
 
 # import uuid
 # from django.contrib.auth import get_user_model

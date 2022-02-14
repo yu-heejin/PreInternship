@@ -20,15 +20,15 @@ from django.views.decorators.csrf import csrf_exempt
 #     parser_classes = [parsers.MultiPartParser, parsers.FormParser]
 #     http_method_names = ['get', 'post', 'patch', 'delete']
 
-# class Image(APIView):
+class Image(APIView):
 
-    # @csrf_exempt
-    # def post(self, request, format=None):
-    #     serializers = PhotoSerializer(data = request.data)
-    #     if serializers.is_valid():
-    #         serializers.save()
-    #         return Response(serializers.data, status=status.HTTP_201_CREATED)
-    #     return Response(serializers.errors, status=status.HTTP_400_BAD_REQUEST)
+    @csrf_exempt
+    def post(self, request, format=None):
+        serializers = PhotoSerializer(data = request.data)
+        if serializers.is_valid():
+            serializers.save()
+            return Response(serializers.data, status=status.HTTP_201_CREATED)
+        return Response(serializers.errors, status=status.HTTP_400_BAD_REQUEST)
 
 # from django.http import HttpResponseRedirect
 # from django.shortcuts import get_object_or_404
