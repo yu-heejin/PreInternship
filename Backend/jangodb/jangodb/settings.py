@@ -26,15 +26,15 @@ MEDIA_ROOT = os.path.join(ROOT_DIR, 'media')
 # 미디어 파일을 위한 저장소 설정
 DEFAULT_FILE_STORAGE = 'storages.backends.s3boto3.S3Boto3Storage'
 
-# 필요한지 확실하지 않음 ; http 사용 여부 = false
+# http 사용 여부 = false
 AWS_S3_SECURE_URLS = False       # use http instead of https
-# 필요한지 확실하지 않음 ; 요청에 대한 복잡한 인증 관련 쿼리 매개 변수 허용 여부 = false
+# 요청에 대한 복잡한 인증 관련 쿼리 매개 변수 허용 여부 = false
 # don't add complex authentication-related query parameters for requests
 AWS_QUERYSTRING_AUTH = False
 
-# AWS_S3 정보 : KEY는 필요하시면 말씀해주세요! github에 올리니까 경고메일이 자꾸 와서 지웠습니다..
-AWS_S3_ACCESS_KEY_ID = 'AKIAUAMQWAYE3VAYCUXP'
-AWS_S3_SECRET_ACCESS_KEY = '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'
+# AWS_S3 정보 : KEY는 필요하시면 말씀해주세요!
+AWS_S3_ACCESS_KEY_ID = 'AWS_S3_ACCESS_KEY_ID'
+AWS_S3_SECRET_ACCESS_KEY = 'AWS_S3_SECRET_ACCESS_KEY'
 AWS_REGION = 'ap-northeast-2'
 
 # S3 storages
