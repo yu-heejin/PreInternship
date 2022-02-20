@@ -12,3 +12,5 @@
 👉 https://youtu.be/KHvT2t5LU1E
 ### 4. Architecture Diagram
 ![image](https://user-images.githubusercontent.com/96467030/154844447-2e5eff23-c73e-4f6e-a421-73ed89e2ec5c.png)
+### 5. Tech Stack
+<img src="https://img.shields.io/badge/react native-#61DAFB?style=for-the-badge&logo=React&logoColor=white">
