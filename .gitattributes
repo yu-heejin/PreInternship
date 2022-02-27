@@ -1,0 +1,5 @@
+AI filter=lfs diff=lfs merge=lfs -text
+Backend filter=lfs diff=lfs merge=lfs -text
+Frontend filter=lfs diff=lfs merge=lfs -text
+README.md filter=lfs diff=lfs merge=lfs -text
+bfg-1.14.0.jar filter=lfs diff=lfs merge=lfs -text
