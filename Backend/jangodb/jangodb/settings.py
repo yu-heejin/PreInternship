@@ -137,7 +137,7 @@ DATABASES = {
         'NAME': 'ImgDB',
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
-                'host': 'mongodb+srv://timmy:tjdskacjdsus@cluster0.pszbu.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+                'host': ''
         }
     }
 }
